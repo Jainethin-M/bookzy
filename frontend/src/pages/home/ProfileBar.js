@@ -100,6 +100,12 @@ const SidebarWithButton = () => {
           </div>
           <div
             className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+            onClick={handleClickOrders} // Updated navigation for orders
+          >
+            My Returns
+          </div>
+          <div
+            className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             onClick={handleClickContactus} // Updated navigation for orders
           >
             Contact us
