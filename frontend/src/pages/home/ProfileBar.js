@@ -31,6 +31,9 @@ const SidebarWithButton = () => {
   const handleClickOrders = () => {
     navigate('/user/orders'); // Correct path for orders
   };
+  const handleClickReturns = () => {
+    navigate('/user/return'); // Correct path for orders
+  };
 
   const queryClient = useQueryClient();
   const handleClickLogout = async() => {
@@ -100,7 +103,7 @@ const SidebarWithButton = () => {
           </div>
           <div
             className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
-            onClick={handleClickOrders} // Updated navigation for orders
+            onClick={handleClickReturns} // Updated navigation for orders
           >
             My Returns
           </div>

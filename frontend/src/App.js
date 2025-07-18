@@ -91,6 +91,10 @@ const App = () => {
             element={authUser ? <UpdateProduct /> : <Navigate to="/login" />}
           />
           <Route
+            path="/user/return"
+            element={authUser ? <h1>No Returns Made</h1> : <Navigate to="/login" />}
+          />
+          <Route
             path="/createproduct"
             element={authUser ? <CreateProduct /> : <Navigate to="/login" />}
           />

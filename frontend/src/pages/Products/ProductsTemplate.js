@@ -28,7 +28,7 @@ const ProductsTemplate = ({ product , status = null }) => {
       <div className="p-4 cursor-default">
         <h2 className="card-title">{product?.name}</h2>
         <p>₹ {product?.price}</p> 
-        <p>/ 100 {product?.price}</p> 
+        <p>100 coins</p> 
 
         {status && <p>status : {status}</p>}
       </div>
