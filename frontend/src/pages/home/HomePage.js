@@ -153,12 +153,12 @@ const HomePage = () => {
 
       {/* Floating Chatbot Icon */}
       <button
-        onClick={() => setChatOpen(!chatOpen)}
+        onClick={() => window.open('https://www.jotform.com/agent/01981c5696687bc2a9e2469ed624c7786b5f', '_blank')}
         className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg p-4 z-50 flex items-center justify-center"
         style={{ width: 56, height: 56 }}
         aria-label="Open chatbot"
-      >
-        <FaComments size={28} />
+      ><FaComments size={28} />
+        
       </button>
 
       {/* Floating Chat Window */}

@@ -12,25 +12,24 @@ const ProductsTemplate = ({ product , status = null }) => {
   };
 
   return (
-    <div key={product._id} className="bg-blcak shadow-md" onClick={handleClick}>
+    <div
+      key={product._id}
+      className="bg-white shadow-md rounded-lg border border-gray-200 cursor-pointer"
+      onClick={handleClick}
+    >
       {/* Product Image */}
       <img
         src={product?.productImage || 'https://placehold.co/400'}
         alt={product?.name}
-        className="rounded-t-lg w-full h-40 object-cover border-2"
-        
+        className="rounded-t-lg w-full h-40 object-cover border-b-2"
       />
 
       {/* Product Info */}
-      <div className="p-4 cursor-default" >
-        <h2 className="card-title ">{product?.name}</h2>
+      <div className="p-4 cursor-default">
+        <h2 className="card-title">{product?.name}</h2>
         <p>₹ {product?.price}</p>
-        {status && 
-          <p>status : {status}</p>
-        }
+        {status && <p>status : {status}</p>}
       </div>
-
-      
     </div>
   );
 };

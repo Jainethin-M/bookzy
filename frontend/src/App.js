@@ -16,6 +16,7 @@ import CreateProduct from './pages/Products/CreateProduct.js'
 import UpdateProduct from './pages/Products/UpdateProduct.js'
 import Contactus from './pages/home/Contactus.js';
 import Test from './Test.js';
+import banner1 from './assets/images/bookzy_theme.jpg'; // Add this import at the top
 
 export const userContext = createContext(null);
 const App = () => {
@@ -57,7 +58,21 @@ const App = () => {
 
   return (
     <userContext.Provider value={authUser}>
-      <div>
+      <div
+        style={{
+          minHeight: '100vh',
+          width: '100vw',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          zIndex: -1,
+          backgroundImage: `url(${banner1})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+      <div style={{ position: 'relative', zIndex: 1, minHeight: '100vh' }}>
         <Routes>
           <Route
             path="/login"

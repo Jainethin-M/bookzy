@@ -44,7 +44,7 @@ const Products = ({ searchItem , searchCategory , searchTag}) => {
   return (
     <div>
       {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5 text-black">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5  text-black">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <ProductsTemplate key={product._id} product={product} />
